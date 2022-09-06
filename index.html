@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cheat Sheet Project Website</title>
+  <link rel="stylesheet" href=".\resources\styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="header">
+  <ul>
+    <li class="button button-a home"><a href="#top">Home</a></li>
+    <li class="button button-a" id="htmlb"><a href="#html">HTML</a></li>
+    <li class="button button-b"><a href="#css">CSS</a></li>
+  </ul>
+  </nav>
+  <header>
+    <article class="intro">
+      <h1 class="title">HTML & CSS Cheat Sheet</h1>
+      <div class="intro-p">
+        <p>One cannot always remember every single thing he/she learned in a course (save he/she has fotographic memory)
+          and thus the need for this project. This is a simple webpage project where I applied what I learned during the
+          introductory HTML and CSS courses in Codecademy.
+        </p>
+        <p class="intro-d"> * This webpage contains a simple cheat sheet for future reference to help one build websites based on personal
+          notes taken from the course. 
+        </p>
+      </div>
+    </article>
+  </header>
+  <main>
+    <section id="html" class="html-section">
+      <article>
+        <img src="./resources/images/html_logo.png">
+        <h2>HTML</h2>
+        <p>This section is meant to refresh the reader regarding common HTML tags which are used
+          to "mark-up" what type of element the enclosed content is meant to be. 
+        </p>
+        <p class="note">(Remember that <strong>HTML</strong>
+            stands for <strong>H</strong>iper-<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)
+        </p>
+      </article>
+      <table>
+        <thead>
+          <tr class="top-row">
+            <th colspan="3"><h3>Common HTML Tags</h3></th>
+          </tr>
+          <tr>
+            <th><h4>Tag</h4></th>
+            <th><h4>Name</h4></th>
+            <th><h4>Description</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;!DOCTYPE html&gt;</td>
+            <td>Doc Type</td>
+            <td>Declares to the browser what type of document to expect.</td>
+          </tr>
+          <tr>
+            <td>&lt;head&gt;</td>
+            <td>Head</td>
+            <td>Contains all the metadata such as the title displayed on the browser's tab.</td>
+          </tr>
+          <tr>
+            <td>&lt;body&gt;</td>
+            <td>Body</td>
+            <td>Defines the space where text, images, buttons will be displayed.</td>
+          </tr>
+          <tr>
+            <td>&lt;div&gt;</td>
+            <td>Division</td>
+            <td>Container that divides the page into sections.</td>
+          </tr>
+          <tr>
+            <td>&lt;h#&gt;</td>
+            <td>Heading</td>
+            <td>Defines headings ordered from largest to smallest (# goes  from 1 - 6).</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td>Paragraph</td>
+            <td>Defines that the text inside the tags is a paragraph.</td>
+          </tr>
+
+          <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Unordered list</td>
+            <td>Creates a list of items in no particular order using bullets.</td>
+          </tr>
+          <tr>
+            <td>&lt;ol&gt;</td>
+            <td>Ordered list</td>
+            <td>Creates a list of items in a particular order (numbered).</td>
+          </tr>
+          <tr>
+            <td>&lt;li&gt;</td>
+            <td>List item</td>
+            <td>Adds list items.</td>
+          </tr>
+          <tr>
+            <td>&lt;img src=""/&gt;</td>
+            <td>Image</td>
+            <td>Adds image to a webpage (self-closing tag).</td>
+          </tr>
+          <tr>
+            <td>&lt;video&gt;</td>
+            <td>Video</td>
+            <td>Adds video to a webpage.</td>
+          </tr>
+          <tr>
+            <td>&lt;a&gt;</td>
+            <td>Anchor</td>
+            <td>Used to add links (wrap around any element to turn it into a link).</td>
+          </tr>
+          <tr>
+            <td>&lt;!--comment--&gt;</td>
+            <td>Comment</td>
+            <td>Used to add comments to an html file (comments are code lines that are not read by the browser).</td>
+          </tr>
+
+        </tbody>
+        <thead>
+          <tr><th colspan="3"><h3>Semantic HTML Tags</h3></th></tr>
+          <tr>
+            <th><h4>Tag</h4></th>
+            <th><h4>Name</h4></th>
+            <th><h4>Description</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;header&gt;</td>
+            <td>Header</td>
+            <td>Container for navigational links or introductory content.</td>
+          </tr>
+          <tr>
+            <td>&lt;nav&gt;</td>
+            <td>Navigation</td>
+            <td>Contains block of navigation links such as table of contents.</td>
+          </tr>
+          <tr>
+            <td>&lt;link&gt;</td>
+            <td>Link</td>
+            <td>Links CSS file or other resources to HTML file (self-closing).</td>
+          </tr>
+          <tr>
+            <td>&lt;main&gt;</td>
+            <td>Main</td>
+            <td>Encapsulates the dominant content within a webpage.</td>
+          </tr>
+          <tr>
+            <td>&lt;section&gt;</td>
+            <td>Section</td>
+            <td>Defines sections of content with the same theme (chapters, headings, etc.).</td>
+          </tr>
+          <tr>
+            <td>&lt;article&gt;</td>
+            <td>Article</td>
+            <td>Holds content that makes sense on its own.</td>
+          </tr>
+          <tr>
+            <td>&lt;aside&gt;</td>
+            <td>Aside</td>
+            <td>Marks additional info that can enhance another element but isn't required to
+                understand the main content. (Bibliographies, endnotes, etc.)
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;figure&gt;</td>
+            <td>Figure</td>
+            <td>Encapsulates media such as an image, video, etc. referenced in the main flow of the document.</td>
+          </tr>
+          <tr>
+            <td>&lt;footer&gt;</td>
+            <td>Footer</td>
+            <td>Used mainly to display contact info., terms of use, copyright info, etc. at the end of the webpage body.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="css" class="css-section">
+      <article>
+        <img src="./resources/images/css_logo.png">
+        <h2>CSS</h2>
+        <p>This section covers how selectors are declared in CSS and a quick reminder regarding
+          common CSS properties.
+        </p>
+      </article>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3"><h3>CSS Selectors</h3></th>
+          </tr>
+          <tr>
+            <th><h4>HTML Tag</h4></th>
+            <th><h4>CSS Selector</h4></th>
+            <th><h4>Additional Notes</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;all&gt;</td>
+            <td>* {}</td>
+            <td>Universal selector</td>
+          </tr>
+          <tr>
+            <td>&lt;tag&gt;</td>
+            <td>tag {}</td>
+            <td>Tag selector</td>
+          </tr>
+          <tr>
+            <td>&lt;tag class='class'&gt;</td>
+            <td>.class {}</td>
+            <td>One can add many classes into the html class attribute.
+                ie. &lt;tag class='class class2 class3'&gt; and applies all rulesets
+                pertaining to each defined class.
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;tag id='id'&gt;</td>
+            <td>#id {}</td>
+            <td>When an html element needs to be styled uniquely. (id's
+                override all rulesets since it is meant to style uniquely
+                only one specific element)
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;tag attribute=''&gt;</td>
+            <td>[attribute] {}, tag[attribute*='value'] {}</td>
+            <td>Targets all elements with the attribute containing the value enclosed with ''.</td>
+          </tr>
+          <tr>
+            <td>&lt;tag&gt; at a certain event</td>
+            <td>tag:event/action {}</td>
+            <td>Pseudo-class selectors. Changes targeted element when an event happens.</td>
+          </tr>
+          <tr>
+            <td>N/a</td>
+            <td>tag.class {}</td>
+            <td>Chaining. This is used when two or more selectors are needed to target
+                more specific elements.
+            </td>
+          </tr>
+          <tr>
+            <td>N/a</td>
+            <td>.class tag {} or tag tag2{}</td>
+            <td>Descendant combinator. Selects elements nested within other html elements.
+                ie. selecting all nested tag elements within the parent html containing a certain class
+                or selecting nested tag2 elements within a parent tag.
+            </td>
+          </tr>
+          <tr>
+            <td>N/a</td>
+            <td>tag, .class {}</td>
+            <td>Multiple selectors. Applies the same style to all tag and .class selected.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="css2">
+        <thead>
+          <tr>
+            <th colspan="3"><h3>Common CSS Properties</h3></th>
+          </tr>
+          <tr>
+            <th><h4>Property</h4></th>
+            <th><h4>Description</h4></th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <td>!important</td>
+            <td>Overrides any style. (This goes after a property declaration.)
+                ie. property: value !important;
+            </td>
+          </tr>
+          <tr>
+            <td>color</td>
+            <td>Sets text color (forefround) where the value can be:
+              <ul>
+                <li>#000000</li>
+                <li>rgb/a(r, g, b | alpha)</li>
+                <li>hsl/a(degree, saturation, lightness | alpha)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>background-color</td>
+            <td>Sets background color.</td>
+          </tr>
+          <tr>
+            <td>opacity</td>
+            <td>How transparent an element is from 0 (transparent) - 1 (opaque).</td>
+          </tr>
+          <tr>
+            <td>background-image: url('')</td>
+            <td>Set element's background to image.</td>
+          </tr>
+          <tr>
+            <td>border</td>
+            <td>Adds border to element.</td>
+          </tr>
+          <tr>
+            <td>font-family</td>
+            <td>Sets font. Font must be already installed in the computer.</td>
+          </tr>
+          <tr>
+            <td>font-size</td>
+            <td>Sets font size</td>
+          </tr>
+          <tr>
+            <td>font-weight</td>
+            <td>Sets font thickness from 1 (lightest) - 1000 (boldest). Not 
+              all fonts have numeric weight values available.
+            </td>
+          </tr>
+          <tr>
+            <td>font-style</td>
+            <td>Sets font to italic or normal</td>
+          </tr>
+          <tr>
+            <td>text-align</td>
+            <td>Aligns text to the element that holds it in any of the following manners:
+              <ul>
+                <li>left</li>
+                <li>center</li>
+                <li>right</li>
+                <li>justify</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>text-transform</td>
+            <td>Changes text to uppercase, lowercase, etc.</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+  </main>
+</body>
+</html>
