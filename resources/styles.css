@@ -50,7 +50,7 @@ nav {
 }
 
 .home {
-    background-color: gray;
+    background-color: dodgerblue;
 }
 
 .home a {
@@ -62,7 +62,7 @@ nav {
 }
 
 .home:hover a {
-    color: gray;
+    color: dodgerblue;
 }
 
 .button-a{
@@ -73,7 +73,7 @@ header {
     margin-top: 60px;
     padding: 50px;
     height: auto;
-    background-color: gray;
+    background-color: dodgerblue;
 }
 
 article.intro {
